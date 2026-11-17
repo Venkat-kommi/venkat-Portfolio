@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080a12" />
+  <meta name="description" content="Venkat Kommi — Data Engineer, AI/ML Developer and Software Developer. Explore projects, skills and experience." />
+  <title>Venkat Kommi — Engineer & Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+    {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}
+  </script>
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Venkat Kommi home"><span class="brand-mark">VK</span><span>VENKAT KOMMI<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation"><span></span><span></span></button>
+    <nav id="navMenu">
+      <a href="#about">About</a><a href="#skills">Expertise</a><a href="#work">Projects</a><a href="#experience">Journey</a><a href="#contact" class="nav-cta">Let's talk <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> OPEN TO OPPORTUNITIES <span class="eyebrow-line"></span> INDIA</div>
+        <p class="hero-kicker">HELLO, I'M</p>
+        <h1>Venkat<br><span class="gradient-text">Kommi.</span></h1>
+        <div class="hero-role"><span class="role-line"></span><span id="roleText">DATA ENGINEER</span><span class="typing-caret">_</span></div>
+        <p class="hero-intro">I turn complex data into clear decisions and ambitious ideas into working technology. Building across data engineering, AI and software.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span>↘</span></a><a class="button button-ghost" href="assets/Venkat-Kommi-Resume.pdf" download>Download résumé <span>↓</span></a></div>
+        <div class="hero-socials"><a href="https://www.linkedin.com/in/venkat-kommi-052042273/" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="https://github.com/Venkat-komm" target="_blank" rel="noreferrer">GITHUB ↗</a><a href="mailto:venkatchowdary435@gmail.com">EMAIL ↗</a></div>
+      </div>
+      <div class="hero-visual" aria-label="Animated 3D particle sculpture">
+        <div class="visual-label label-top"><span>FIG. 01</span><span>CREATIVE ENGINEERING</span></div>
+        <canvas id="heroCanvas"></canvas>
+        <div class="orbit-caption"><span class="caption-dot"></span> CURIOUS BY DESIGN</div>
+        <div class="visual-coordinates">17° 23' N<br>78° 29' E</div>
+        <div class="visual-index">01 <span>/</span> 04</div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span class="hero-bottom-note">DESIGNING · BUILDING · LEARNING</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Areas of focus"><div class="ticker-track"><span>DATA ENGINEERING ✳</span><span>ARTIFICIAL INTELLIGENCE ✳</span><span>COMPUTER VISION ✳</span><span>CLOUD TECHNOLOGY ✳</span><span>SOFTWARE DEVELOPMENT ✳</span><span>DATA ENGINEERING ✳</span><span>ARTIFICIAL INTELLIGENCE ✳</span><span>COMPUTER VISION ✳</span></div></section>
+
+    <section class="section section-shell about-section" id="about">
+      <div class="section-heading"><span class="section-number">01 / ABOUT</span><span class="section-rule"></span><span class="section-aside">A LITTLE CONTEXT</span></div>
+      <div class="about-grid">
+        <div><h2 class="section-title">Engineer by<br>training. <span class="muted-title">Curious by<br>nature.</span></h2></div>
+        <div class="about-copy"><p class="lead">I'm a Computer Science (Data Science) graduate from R.V.R. & J.C. College of Engineering, interested in building systems that make technology useful, reliable and intelligent.</p><p>My work and learning span data pipelines, cloud platforms, analytics, machine learning and computer vision. I enjoy moving between the big picture and the details—understanding a problem, shaping a solution, and making it real.</p><div class="about-facts"><div><strong>2022—26</strong><span>UNDERGRADUATE</span></div><div><strong>3+</strong><span>TECH DOMAINS</span></div><div><strong>BUILD</strong><span>LEARN · ITERATE</span></div></div></div>
+      </div>
+    </section>
+
+    <section class="section section-shell skills-section" id="skills">
+      <div class="section-heading"><span class="section-number">02 / EXPERTISE</span><span class="section-rule"></span><span class="section-aside">TOOLS OF THE TRADE</span></div>
+      <div class="skills-intro"><h2 class="section-title">A versatile<br><span class="gradient-text">toolkit.</span></h2><p>From shaping raw data to experimenting with intelligent systems, these are the technologies I use and continue to explore.</p></div>
+      <div class="skill-grid">
+        <article class="skill-card"><div class="skill-card-top"><span>01</span><span class="skill-icon">⌘</span></div><h3>Data Engineering</h3><p>Building foundations for dependable, scalable data workflows.</p><div class="tags"><span>Python</span><span>SQL</span><span>PySpark</span><span>Pandas</span><span>ETL / ELT</span><span>Airflow</span><span>AWS Glue</span></div></article>
+        <article class="skill-card"><div class="skill-card-top"><span>02</span><span class="skill-icon">◈</span></div><h3>Cloud & Data Platforms</h3><p>Cloud services, storage, orchestration and analytical databases.</p><div class="tags"><span>AWS S3</span><span>EC2</span><span>Lambda</span><span>Redshift</span><span>Athena</span><span>CloudWatch</span><span>Snowflake</span></div></article>
+        <article class="skill-card"><div class="skill-card-top"><span>03</span><span class="skill-icon">✳</span></div><h3>AI & Computer Vision</h3><p>Exploring perception, image understanding and applied ML.</p><div class="tags"><span>Machine Learning</span><span>TensorFlow</span><span>PyTorch</span><span>YOLO</span><span>OpenCV</span><span>ResNet50</span><span>DPT</span></div></article>
+        <article class="skill-card"><div class="skill-card-top"><span>04</span><span class="skill-icon">⌘</span></div><h3>Software Development</h3><p>Creating functional experiences across web and mobile platforms.</p><div class="tags"><span>Java</span><span>JavaScript</span><span>Swift</span><span>SwiftUI</span><span>HTML</span><span>CSS</span><span>React</span></div></article>
+        <article class="skill-card"><div class="skill-card-top"><span>05</span><span class="skill-icon">▥</span></div><h3>Analytics & Visualisation</h3><p>Turning business questions into useful analysis and clear visuals.</p><div class="tags"><span>Tableau</span><span>Power BI</span><span>Matplotlib</span><span>Seaborn</span><span>SQL</span><span>Forecasting</span></div></article>
+        <article class="skill-card skill-card-note"><div class="note-orb"></div><span class="note-label">CURRENT MINDSET</span><h3>Always<br>in progress.</h3><p>Technology moves fast. I keep learning, testing and improving—one project at a time.</p><span class="note-arrow">↗</span></article>
+      </div>
+    </section>
+
+    <section class="section section-shell work-section" id="work">
+      <div class="section-heading"><span class="section-number">03 / SELECTED WORK</span><span class="section-rule"></span><span class="section-aside">IDEAS INTO BUILDS</span></div>
+      <div class="work-heading"><h2 class="section-title">Things I've<br><span class="muted-title">worked on.</span></h2><p>A selection of data, AI and software explorations. Some are project builds; others reflect research and development interests.</p></div>
+      <div class="project-list">
+        <article class="project-card project-featured"><div class="project-art art-pipeline"><div class="pipeline-node node-a">RAW DATA</div><div class="pipeline-line"></div><div class="pipeline-node node-b">AWS GLUE</div><div class="pipeline-line"></div><div class="pipeline-node node-c">ATHENA</div><div class="pipeline-pulse"></div><span class="art-corner">DATA FLOW / 001</span></div><div class="project-info"><div class="project-meta"><span>01 — DATA ENGINEERING</span><span>PIPELINE</span></div><h3>AWS Data Pipeline<br>for Sales Analytics</h3><p>Built an AWS sales data pipeline using S3, Glue and Athena to process sales data and generate business insights.</p><div class="tags"><span>AWS S3</span><span>AWS Glue</span><span>Amazon Athena</span><span>SQL</span></div><a class="project-link" href="https://github.com/Venkat-komm" target="_blank" rel="noreferrer">Explore GitHub <span>↗</span></a></div></article>
+        <article class="project-card"><div class="project-art art-validation"><div class="validation-window"><div class="window-bar"><i></i><i></i><i></i><span>quality_check.py</span></div><div class="code-lines"><b>01</b><span>validate_records(data)</span><b>02</b><span class="code-indent">remove_duplicates()</span><b>03</b><span class="code-indent">handle_missing_values()</span><b>04</b><span class="code-success">✓ data_quality_passed</span></div></div><span class="art-corner">QUALITY / 002</span></div><div class="project-info"><div class="project-meta"><span>02 — DATA QUALITY</span><span>AUTOMATION</span></div><h3>Automated Data Cleaning<br>& Validation</h3><p>Developed a Python, Pandas and SQL pipeline to handle missing values, remove duplicates, validate records and improve data quality.</p><div class="tags"><span>Python</span><span>Pandas</span><span>SQL</span><span>ETL</span></div><a class="project-link" href="https://github.com/Venkat-komm" target="_blank" rel="noreferrer">Explore GitHub <span>↗</span></a></div></article>
+        <article class="project-card"><div class="project-art art-vision"><div class="vision-frame"><div class="vision-grid"></div><div class="vision-box"><span>OBJECT DETECTED</span></div><div class="vision-crosshair">+</div></div><span class="art-corner">PERCEPTION / 003</span></div><div class="project-info"><div class="project-meta"><span>03 — COMPUTER VISION</span><span>RESEARCH</span></div><h3>Thermal + RGB Human<br>Detection</h3><p>Exploring sensor fusion for human detection using RGB and thermal imagery, YOLO models and edge hardware such as Jetson Nano.</p><div class="tags"><span>YOLO</span><span>OpenCV</span><span>Thermal Camera</span><span>Jetson Nano</span></div><a class="project-link" href="https://github.com/Venkat-komm" target="_blank" rel="noreferrer">Explore GitHub <span>↗</span></a></div></article>
+        <article class="project-card"><div class="project-art art-depth"><div class="depth-stack"><span></span><span></span><span></span><span></span><span></span></div><div class="depth-target">DEPTH<br>MAP</div><span class="art-corner">SAFETY / 004</span></div><div class="project-info"><div class="project-meta"><span>04 — AI / RESEARCH</span><span>DEPTH ESTIMATION</span></div><h3>CareDepth — Construction<br>Safety Monitoring</h3><p>Research direction exploring monocular depth estimation with DPT-Large for construction-site hazard awareness and safety monitoring.</p><div class="tags"><span>DPT-Large</span><span>MiDaS</span><span>Python</span><span>Computer Vision</span></div><a class="project-link" href="https://github.com/Venkat-komm" target="_blank" rel="noreferrer">Explore GitHub <span>↗</span></a></div></article>
+        <article class="project-card"><div class="project-art art-mobile"><div class="phone-shape"><div class="phone-island"></div><div class="phone-avatar"></div><div class="phone-wave"></div><div class="phone-bars"><i></i><i></i><i></i></div></div><span class="art-corner">MOBILE / 005</span></div><div class="project-info"><div class="project-meta"><span>05 — APP DEVELOPMENT</span><span>IOS</span></div><h3>3D Body Tracking<br>Swift App</h3><p>Developed a body-tracking 3D app concept using Swift and SwiftUI, exploring interactive 3D experiences on mobile.</p><div class="tags"><span>Swift</span><span>SwiftUI</span><span>3D</span><span>Xcode</span></div><a class="project-link" href="https://github.com/Venkat-komm" target="_blank" rel="noreferrer">Explore GitHub <span>↗</span></a></div></article>
+      </div>
+      <p class="project-disclaimer">Project descriptions reflect work and research directions shared in my résumé and portfolio notes. GitHub links lead to my profile; individual repository links can be added as projects are published.</p>
+    </section>
+
+    <section class="section section-shell experience-section" id="experience">
+      <div class="section-heading"><span class="section-number">04 / THE JOURNEY</span><span class="section-rule"></span><span class="section-aside">EXPERIENCE & EDUCATION</span></div>
+      <h2 class="section-title">Where I've<br><span class="muted-title">been learning.</span></h2>
+      <div class="timeline"><div class="timeline-item"><div class="timeline-date">JAN 2025 — JUN 2025</div><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-top"><h3>Freelance Data Analyst</h3><span class="timeline-type">EXPERIENCE</span></div><h4>NIKE · Freelance</h4><p>Analysed retail and marketing data using Python, SQL and Tableau. Work included dashboard development, customer segmentation and sales forecasting, with data-driven recommendations for campaign ROI and demand forecasting.</p><div class="tags"><span>Python</span><span>SQL</span><span>Tableau</span><span>Analytics</span></div></div></div>
+      <div class="timeline-item"><div class="timeline-date">2022 — 2026</div><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-top"><h3>Bachelor's Degree — CSE (Data Science)</h3><span class="timeline-type">EDUCATION</span></div><h4>R.V.R. & J.C. College of Engineering</h4><p>Undergraduate study focused on computer science and data science.</p></div></div>
+      <div class="timeline-item"><div class="timeline-date">2020 — 2022</div><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-top"><h3>Intermediate — MPC</h3><span class="timeline-type">EDUCATION</span></div><h4>Vignan Co-operative Junior College</h4></div></div>
+      <div class="timeline-item"><div class="timeline-date">2019 — 2020</div><div class="timeline-marker"></div><div class="timeline-content"><div class="timeline-top"><h3>SSC</h3><span class="timeline-type">EDUCATION</span></div><h4>Vignan High School</h4></div></div></div>
+    </section>
+
+    <section class="contact-section" id="contact"><div class="contact-glow"></div><div class="section-shell contact-inner"><div class="section-heading"><span class="section-number">05 / GET IN TOUCH</span><span class="section-rule"></span><span class="section-aside">YOUR MOVE</span></div><p class="contact-kicker">HAVE A PROJECT OR OPPORTUNITY?</p><h2>Let's make<br><span class="gradient-text">something matter.</span></h2><a class="contact-email" href="mailto:venkatchowdary435@gmail.com">venkatchowdary435@gmail.com <span>↗</span></a><div class="contact-bottom"><span>BASED IN INDIA · OPEN TO GLOBAL OPPORTUNITIES</span><div><a href="https://www.linkedin.com/in/venkat-kommi-052042273/" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="https://github.com/Venkat-komm" target="_blank" rel="noreferrer">GITHUB ↗</a></div></div></div></section>
+  </main>
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">VK</span><span>VENKAT KOMMI<span class="brand-dot">.</span></span></a><span>© <span id="year"></span> VENKAT KOMMI. BUILT WITH CURIOSITY.</span><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
